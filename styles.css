@@ -9,27 +9,3 @@ body {
   position: relative; /* Needed for absolute positioning of the circle */
 }
 
-.circle {
-  position: absolute;
-  top: calc(20vh - 1.515vw); /* 20% of viewport height minus half of the circle's diameter in viewport width */
-  right: 2.08vw; /* 2.08% of viewport width */
-  width: 3.03vw; /* 3.03% of viewport width */
-  height: 3.03vw; /* 3.03% of viewport width */
-  border-radius: 50%; /* To make it a circle */
-  border: 0.3cm solid #95b37c; /* Change color to #95b37c */
-  box-sizing: border-box; /* Ensure border size is included in the width/height */
-  pointer-events: none; /* Make the circle non-clickable */
-  animation: expand 3s ease-in-out infinite alternate; /* 3s duration, alternate direction, infinite loop */
-}
-
-@keyframes expand {
-  0% {
-    transform: scale(1); /* Start with normal size */
-  }
-  33% {
-    transform: scale(1.33); /* Expand to about a third larger */
-  }
-  100% {
-    transform: scale(1); /* Back to normal size */
-  }
-}
