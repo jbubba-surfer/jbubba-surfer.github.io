@@ -57,7 +57,9 @@ body {
 }
 
 
-
+.ympyra-image {
+    animation: pulse2 3s ease-in-out infinite;
+}
 
 .circle {
   /* Other CSS properties for the circle */
