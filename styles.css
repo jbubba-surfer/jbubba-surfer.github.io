@@ -37,6 +37,6 @@ body {
 
 .circle {
   /* Other CSS properties for the circle */
-  animation: pulse 4s ease-in-out infinite; /* Increase duration to 4s */
+  animation: pulse 3s ease-in-out infinite; /* Increase duration to 4s */
 }
   
