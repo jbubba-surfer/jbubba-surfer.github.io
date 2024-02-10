@@ -16,7 +16,7 @@ body {
     width: 3.03cm;
     height: 3.03cm;
     border-radius: 50%; /* To make it a circle */
-    border: 0.3cm solid #95b37c; /* 0.3 cm stroke with color #95b37c */
+    border: 0.3cm solid red; /* 0.3 cm stroke with color #95b37c */
     box-sizing: border-box; /* Ensure border size is included in the width/height */
     pointer-events: none; /* Make the circle non-clickable */
   }
