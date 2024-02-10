@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('opiskelijakortti_digi2.jpg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
+    background-image: url('opiskelijakortti_digi.jpg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
