@@ -11,8 +11,8 @@ body {
 
   .circle {
     position: absolute;
-    top: 20cm;
-    right: 2.08cm;
+    top: 18cm;
+    right: 1.88cm;
     width: 3.03cm;
     height: 3.03cm;
     border-radius: 50%; /* To make it a circle */
