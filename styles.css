@@ -1,3 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('path_to_your_image.jpg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; /* Needed for absolute positioning of the circle */
+}
+
 .circle {
   position: absolute;
   top: calc(20vh - 1.515vw); /* 20% of viewport height minus half of the circle's diameter in viewport width */
@@ -8,20 +19,17 @@
   border: 0.3cm solid #95b37c; /* Change color to #95b37c */
   box-sizing: border-box; /* Ensure border size is included in the width/height */
   pointer-events: none; /* Make the circle non-clickable */
-  animation: expand 3s infinite alternate; /* 3s duration, alternate direction, infinite loop */
+  animation: expand 3s ease-in-out infinite alternate; /* 3s duration, alternate direction, infinite loop */
 }
 
 @keyframes expand {
   0% {
-    width: 3.03vw; /* Start with normal size */
-    height: 3.03vw; /* Start with normal size */
+    transform: scale(1); /* Start with normal size */
   }
   33% {
-    width: 4.04vw; /* Expand to about a third larger */
-    height: 4.04vw; /* Expand to about a third larger */
+    transform: scale(1.33); /* Expand to about a third larger */
   }
   100% {
-    width: 3.03vw; /* Back to normal size */
-    height: 3.03vw; /* Back to normal size */
+    transform: scale(1); /* Back to normal size */
   }
 }
