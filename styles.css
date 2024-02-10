@@ -43,15 +43,15 @@ body {
 }
   @keyframes pulse2 {
   0% {
-    transform: scale(0.8); /* Start from smaller size */
+    transform: scale(1); /* Start from smaller size */
     opacity: 1; /* Start with full transparency */
   }
   50% {
-    transform: scale(1); /* Grow to full size */
+    transform: scale(1.2); /* Grow to full size */
     opacity: 1; /* Maintain full opacity */
   }
   100% {
-    transform: scale(0.8); /* Shrink back to smaller size */
+    transform: scale(1); /* Shrink back to smaller size */
     opacity: 1; /* Fade out */
   }
 }
