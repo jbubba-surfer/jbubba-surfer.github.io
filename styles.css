@@ -20,13 +20,12 @@ body {
     border: 0.3cm solid #95b37c;
     animation: pulse 1s infinite alternate;
   }
-  
   @keyframes pulse {
   0% {
     transform: scale(0.4); /* Start from smaller size */
     opacity: 0; /* Start with full transparency */
   }
-  25% {
+  50% {
     transform: scale(1); /* Grow to full size */
     opacity: 1; /* Maintain full opacity */
   }
@@ -35,5 +34,9 @@ body {
     opacity: 0; /* Fade out */
   }
 }
-  
+
+.circle {
+  /* Other CSS properties for the circle */
+  animation: pulse 4s ease-in-out infinite; /* Increase duration to 4s */
+}
   
