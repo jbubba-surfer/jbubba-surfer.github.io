@@ -19,15 +19,10 @@ body {
     background-color: #95b37c;
     border: 0.3cm solid #95b37c;
     animation: pulse 1s infinite alternate;
-     z-index: 0;
     
   }
 
 
-.image {
-  /* Your image styling */
-  z-index: 1; /* Set a higher z-index value for the image */
-}
   @keyframes pulse {
   0% {
     transform: scale(0.4); /* Start from smaller size */
