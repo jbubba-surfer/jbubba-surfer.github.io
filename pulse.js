@@ -1,9 +1,9 @@
-// JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     const circle = document.querySelector('.circle');
+    circle.style.transition = 'transform 1s ease-in-out';
   
     setInterval(function() {
-      circle.classList.toggle('pulse');
-    }, 1000); // Toggle every second (1000 milliseconds)
+      circle.style.transform = circle.style.transform === 'scale(1.1)' ? 'scale(1)' : 'scale(1.1)';
+    }, 1000);
   });
   

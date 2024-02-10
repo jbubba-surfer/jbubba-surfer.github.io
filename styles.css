@@ -18,10 +18,16 @@ body {
     border-radius: 50%;
     background-color: #95b37c;
     border: 0.3cm solid #95b37c;
-    transition: transform 1s ease-in-out;
+    animation: pulse 1s infinite alternate;
   }
   
-  .pulse {
-    transform: scale(1.1);
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
   }
+  
   
