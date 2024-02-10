@@ -1,35 +1,27 @@
 body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  background-image: url('path_to_your_image.jpg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative; /* Needed for absolute positioning of the circle */
-}
-
-.circle {
-  position: absolute;
-  top: calc(20vh - 1.515vw); /* 20% of viewport height minus half of the circle's diameter in viewport width */
-  right: 2.08vw; /* 2.08% of viewport width */
-  width: 3.03vw; /* 3.03% of viewport width */
-  height: 3.03vw; /* 3.03% of viewport width */
-  border-radius: 50%; /* To make it a circle */
-  background-color: #95b37c; /* Change color to #95b37c */
-  opacity: 0.7; /* Initial opacity */
-  box-shadow: 0 0 0 0.15vw rgba(149, 179, 124, 0.7); /* Stroke effect */
-  animation: pulse 2s ease-in-out infinite alternate; /* 2s duration, ease-in-out timing, infinite loop */
-}
-
-@keyframes pulse {
-  0% {
-    opacity: 0.7; /* Initial opacity */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('opiskelijakortti_digi2.jpg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
   }
-  50% {
-    opacity: 0.4; /* Lower opacity */
+  
+  .circle {
+    position: absolute;
+    top: 20cm;
+    right: 2.08cm;
+    width: 3.03cm;
+    height: 3.03cm;
+    border-radius: 50%;
+    background-color: #95b37c;
+    border: 0.3cm solid #95b37c;
+    transition: transform 1s ease-in-out;
   }
-  100% {
-    opacity: 0.7; /* Back to initial opacity */
+  
+  .pulse {
+    transform: scale(1.1);
   }
-}
+  
