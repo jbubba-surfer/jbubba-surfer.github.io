@@ -12,7 +12,7 @@ body {
   .circle {
     position: absolute;
     top: 7.31cm;
-    right: 0.38cm;
+    right: -0.38cm;
     width: 3.03cm;
     height: 3.03cm;
     border-radius: 50%;
