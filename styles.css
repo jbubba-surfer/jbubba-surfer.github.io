@@ -24,14 +24,14 @@ body {
   @keyframes pulse {
   0% {
     transform: scale(0.4); /* Start from smaller size */
-    opacity: 1; /* Start with full opacity */
+    opacity: 0; /* Start with full transparency */
   }
   50% {
-    transform: scale(1.1); /* Grow to slightly larger size */
+    transform: scale(1); /* Grow to full size */
     opacity: 1; /* Maintain full opacity */
   }
   100% {
-    transform: scale(1.1); /* Maintain larger size */
+    transform: scale(0.4); /* Shrink back to smaller size */
     opacity: 0; /* Fade out */
   }
 }
