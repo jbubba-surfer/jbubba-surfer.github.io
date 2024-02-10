@@ -1,22 +1,27 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url('opiskelijakortti_digi2.jpg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Make the body fill the entire viewport height */
-  }
-  
+.circle {
+  position: absolute;
+  top: calc(20vh - 1.515vw); /* 20% of viewport height minus half of the circle's diameter in viewport width */
+  right: 2.08vw; /* 2.08% of viewport width */
+  width: 3.03vw; /* 3.03% of viewport width */
+  height: 3.03vw; /* 3.03% of viewport width */
+  border-radius: 50%; /* To make it a circle */
+  border: 0.3cm solid #95b37c; /* Change color to #95b37c */
+  box-sizing: border-box; /* Ensure border size is included in the width/height */
+  pointer-events: none; /* Make the circle non-clickable */
+  animation: expand 3s infinite alternate; /* 3s duration, alternate direction, infinite loop */
+}
 
-  .circle {
-    position: absolute;
-    top: 18cm;
-    right: 1.88cm;
-    width: 3.03cm;
-    height: 3.03cm;
-    border-radius: 50%; /* To make it a circle */
-    border: 0.3cm solid #95b37c; /* 0.3 cm stroke with color #95b37c */
-    box-sizing: border-box; /* Ensure border size is included in the width/height */
-    pointer-events: none; /* Make the circle non-clickable */
+@keyframes expand {
+  0% {
+    width: 3.03vw; /* Start with normal size */
+    height: 3.03vw; /* Start with normal size */
   }
+  33% {
+    width: 4.04vw; /* Expand to about a third larger */
+    height: 4.04vw; /* Expand to about a third larger */
+  }
+  100% {
+    width: 3.03vw; /* Back to normal size */
+    height: 3.03vw; /* Back to normal size */
+  }
+}
