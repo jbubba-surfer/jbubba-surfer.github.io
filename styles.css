@@ -12,6 +12,8 @@ body {
 /* Wrapper jota liikutetaan */
 .marker{
   position: absolute;
+  top: 10.57cm;   /* tätä pienennät jos haluat ylöspäin */
+  right: 0.55cm;  /* tätä muutat jos haluat vasen/oikea */
   width: 3.03cm;
   height: 3.03cm;
   display: grid;
@@ -46,3 +48,4 @@ body {
   50%  { transform: scale(1.2); opacity: 1; }
   100% { transform: scale(1);   opacity: 1; }
 }
+
