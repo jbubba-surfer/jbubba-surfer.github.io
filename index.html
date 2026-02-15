@@ -7,10 +7,16 @@
   <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <div class="circle"></div>
-    <img src="ympyra.png" alt="Circle Image" class="ympyra-image" style="position: absolute; top: 10.57cm; right: 0.55cm; width: 1.53cm; height: 1.53cm;">
-     <!-- Include reference to your JavaScript file -->
-  <script src="pulse.js"></script> <!-- 
+    <!-- Keskimmäinen ympyrä, nyt position absolute jotta pulse seuraa -->
+    <div class="circle" style="position: absolute; top: 10.57cm; right: 0.55cm;"></div>
+
+    <!-- Ympyräkuva -->
+    <img src="ympyra.png" alt="Circle Image" class="ympyra-image" 
+         style="position: absolute; top: 10.57cm; right: 0.55cm; width: 1.53cm; height: 1.53cm;">
+
+    <!-- JavaScript, joka luo vilkkuvan pulse-efektin -->
+    <script src="pulse.js"></script>
 </body>
 </html>
+
 
