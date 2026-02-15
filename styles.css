@@ -1,68 +1,48 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url('opiskelijakortti_digi.jpg'); /* Replace 'path_to_your_image.jpg' with the path to your image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-  }
-  
-  .circle {
-    position: absolute;
-    top: 7.57cm;
-    right: -0.48cm;
-    width: 3.03cm;
-    height: 3.03cm;
-    border-radius: 50%;
-    background-color: #95b37c;
-    border: 0.3cm solid #95b37c;
-    animation: pulse 1s infinite alternate;
-    
-  }
-.ympyra-image{
-    animation: pulse2 1s infinite alternate;
-
-    
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('opiskelijakortti_digi.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-  @keyframes pulse {
-  0% {
-    transform: scale(0.4); /* Start from smaller size */
-    opacity: 0; /* Start with full transparency */
-  }
-  50% {
-    transform: scale(1); /* Grow to full size */
-    opacity: 1; /* Maintain full opacity */
-  }
-  100% {
-    transform: scale(0.4); /* Shrink back to smaller size */
-    opacity: 0; /* Fade out */
-  }
-}
-  @keyframes pulse2 {
-  0% {
-    transform: scale(1); /* Start from smaller size */
-    opacity: 1; /* Start with full transparency */
-  }
-  50% {
-    transform: scale(1.2); /* Grow to full size */
-    opacity: 1; /* Maintain full opacity */
-  }
-  100% {
-    transform: scale(1); /* Shrink back to smaller size */
-    opacity: 1; /* Fade out */
-  }
+/* Wrapper jota liikutetaan */
+.marker{
+  position: absolute;
+  width: 3.03cm;
+  height: 3.03cm;
+  display: grid;
+  place-items: center;
 }
 
-
-.ympyra-image {
-    animation: pulse2 3s ease-in-out infinite;
+/* Pulssiympyrä */
+.pulse{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #95b37c;
+  animation: pulse 3s ease-in-out infinite;
 }
 
-.circle {
-  /* Other CSS properties for the circle */
-  animation: pulse 3s ease-in-out infinite; /* Increase duration to 4s */
+/* Sisempi kuva */
+.icon{
+  position: absolute;
+  width: 1.53cm;
+  height: 1.53cm;
+  animation: pulse2 3s ease-in-out infinite;
 }
-  
+
+@keyframes pulse {
+  0%   { transform: scale(0.4); opacity: 0; }
+  50%  { transform: scale(1);   opacity: 1; }
+  100% { transform: scale(0.4); opacity: 0; }
+}
+
+@keyframes pulse2 {
+  0%   { transform: scale(1);   opacity: 1; }
+  50%  { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1);   opacity: 1; }
+}
